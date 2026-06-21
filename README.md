@@ -137,46 +137,48 @@ A floating face companion with blinking eyes, breathing animation, and mood-reac
 
 ## Project Layout
 
-Circa/
-├── CircaApp.swift               # App entry point
-├── Models/
-│   ├── Event.swift              # Event model, RSVP, comfort enums, user preferences
-│   ├── BuddySystem.swift        # Buddy requests, matching, messaging, compatibility scoring
-│   └── ContextTypes.swift       # Mascot context/mood types
-├── ViewModels/
-│   ├── EventsViewModel.swift    # Event list state and actions
-│   └── MascotViewModel.swift    # Mascot mood and message logic
-├── Views/
-│   ├── EventsView.swift         # Main feed with floating nav bar and mascot toggle
-│   ├── EventListView.swift      # Scrollable event card list with search
-│   ├── EventDetailView.swift    # Full event detail: photos, RSVP, reactions, comments
-│   ├── EventMapView.swift       # Map with event pins
-│   ├── AddEventView.swift       # Create new event form
-│   ├── WelcomeView.swift        # Onboarding: name, city, ZIP
-│   ├── ComfortPreferencesView.swift  # Introvert preference setup
-│   ├── MascotWelcomeView.swift  # Post-onboarding mascot intro
-│   ├── ProfileView.swift        # User profile
-│   ├── BuddySystemView.swift    # Browse buddy requests for an event
-│   ├── BuddyPreferencesView.swift    # Set your buddy preferences
-│   └── BuddyMatchesView.swift   # View and manage your buddy matches
-├── Components/
-│   ├── EventCardView.swift      # Event summary card
-│   ├── EventImageView.swift     # Single event image with fallback
-│   ├── PhotoCarouselView.swift  # Horizontal multi-image carousel
-│   ├── MascotView.swift         # Animated mascot face
-│   ├── FloatingMascotView.swift # Floating mascot overlay with speech bubble
-│   ├── TextBubbleView.swift     # Speech bubble component
-│   ├── BubbleShape.swift        # Custom bubble shape
-│   ├── RSVPView.swift           # RSVP action buttons
-│   ├── RSVPCardView.swift       # RSVP response display card
-│   ├── ReactionButton.swift     # Emoji reaction button
-│   ├── SplashScreenView.swift   # Launch screen
-│   └── AchievementType.swift    # Achievement definitions
-├── Utilities/
-│   ├── LocationManager.swift    # CoreLocation wrapper, stores username/city/zip
-│   ├── PersistenceManager.swift # UserDefaults read/write for events
-│   └── Comparable+Clamp.swift  # Clamp utility extension
-└── Assets.xcassets/             # App icon, gradient colors, event images
+- **CircaApp.swift** — App entry point
+- **Models/**
+  - Event.swift — Event model, RSVP, comfort enums, user preferences
+  - BuddySystem.swift — Buddy requests, matching, messaging, compatibility scoring
+  - ContextTypes.swift — Mascot context and mood types
+- **ViewModels/**
+  - EventsViewModel.swift — Event list state and actions
+  - MascotViewModel.swift — Mascot mood and message logic
+- **Views/**
+  - EventsView.swift — Main feed with floating nav bar and mascot toggle
+  - EventListView.swift — Scrollable event card list with search
+  - EventDetailView.swift — Full event detail: photos, RSVP, reactions, comments
+  - EventMapView.swift — Map with event pins
+  - AddEventView.swift — Create new event form
+  - WelcomeView.swift — Onboarding: name, city, ZIP
+  - ComfortPreferencesView.swift — Introvert preference setup
+  - MascotWelcomeView.swift — Post-onboarding mascot intro
+  - ProfileView.swift — User profile
+  - BuddySystemView.swift — Browse buddy requests for an event
+  - BuddyPreferencesView.swift — Set your buddy preferences
+  - BuddyMatchesView.swift — View and manage your buddy matches
+- **Components/**
+  - EventCardView.swift — Event summary card
+  - EventImageView.swift — Single event image with fallback
+  - PhotoCarouselView.swift — Horizontal multi-image carousel
+  - MascotView.swift — Animated mascot face
+  - FloatingMascotView.swift — Floating mascot overlay with speech bubble
+  - TextBubbleView.swift — Speech bubble component
+  - BubbleShape.swift — Custom bubble shape
+  - RSVPView.swift — RSVP action buttons
+  - RSVPCardView.swift — RSVP response display card
+  - ReactionButton.swift — Emoji reaction button
+  - SplashScreenView.swift — Launch screen
+  - AchievementType.swift — Achievement definitions
+- **Utilities/**
+  - LocationManager.swift — CoreLocation wrapper, stores username, city, ZIP
+  - PersistenceManager.swift — UserDefaults read/write for events
+  - Comparable+Clamp.swift — Clamp utility extension
+- **Assets.xcassets/** — App icon, gradient colors, event images
+
+
+
 
 
 
